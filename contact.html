@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - TOLO STUDIO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Playfair+Display:wght@700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .font-serif-display {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#c7d926",
+              "background-light": "#f8f8f6",
+              "background-dark": "#171712",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"],
+              "serif-display": ["Playfair Display", "serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5 sm:px-10 md:px-20 lg:px-40">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 dark:border-b-[#36372a] px-10 py-3">
+<div class="flex items-center gap-4 text-black dark:text-white">
+<div class="size-4">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-black dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">TOLO STUDIO</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-black dark:text-white text-sm font-medium leading-normal" href="index.html">Home</a>
+<a class="text-black dark:text-white text-sm font-medium leading-normal" href="services.html">Services</a>
+<a class="text-black dark:text-white text-sm font-medium leading-normal" href="portfolio.html">Portfolio</a>
+<a class="text-black dark:text-white text-sm font-medium leading-normal" href="team.html">Team</a>
+<a class="text-black dark:text-white text-sm font-medium leading-normal" href="testimonials.html">TestiMonials</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-background-dark text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Schedule a Call</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col gap-12 md:gap-20 py-12 md:py-20">
+<!-- Hero Section -->
+<div class="@container">
+<div class="@[480px]:p-4">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4" data-alt="Abstract image of a dimly lit, luxurious event space with out-of-focus lights" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjscKx_PUM11uSwOvoajO_8YfvVKIpX_CS41ISjwk3OT_DOUIXSwnZFi_FroX7ROZd-eYdLtrc93izHCBsnG1NMcgpKV7j2snvL5p4T6zy4BmW5jeyHkww_lsL1i9wf-1q6g6B6BH1JyjEKTZcVmW3hhIiuIHfeLbBeLjmU7_UPIDOgMyfZIRxeANjYBxV7SfW_WiKKFCjkNLZeIRGIWUCAEc1DfwSaP66w8s0jr5y7P9CkOAOqvfFjJ3hFQKQ6jmJHikF_PEwhg");'>
+<div class="flex flex-col gap-4 text-center items-center">
+<h1 class="font-serif-display text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                      Connect with TOLO STUDIO
+                                    </h1>
+<div class="h-0.5 w-24 bg-primary"></div>
+<h2 class="text-white text-sm font-normal leading-normal @[480px]:text-lg @[480px]:font-normal @[480px]:leading-normal max-w-lg">
+                                      Let's create your next masterpiece together.
+                                    </h2>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Info Grid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4 px-4">
+<div class="flex flex-1 gap-4 rounded-lg border border-white/10 dark:border-[#4f513d] bg-white/[.05] dark:bg-[#25261d] p-4 flex-col">
+<span class="material-symbols-outlined text-primary" style="font-size: 28px;">location_on</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">123 Luxury Avenue, Suite 400, Beverly Hills, CA 90210</h2>
+<p class="text-black/60 dark:text-[#b4b79f] text-sm font-normal leading-normal">Address</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-white/10 dark:border-[#4f513d] bg-white/[.05] dark:bg-[#25261d] p-4 flex-col">
+<span class="material-symbols-outlined text-primary" style="font-size: 28px;">call</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">+1 (310) 555-0101</h2>
+<p class="text-black/60 dark:text-[#b4b79f] text-sm font-normal leading-normal">Phone</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-white/10 dark:border-[#4f513d] bg-white/[.05] dark:bg-[#25261d] p-4 flex-col">
+<span class="material-symbols-outlined text-primary" style="font-size: 28px;">mail</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">contact@tolostudio.com</h2>
+<p class="text-black/60 dark:text-[#b4b79f] text-sm font-normal leading-normal">Email</p>
+</div>
+</div>
+</div>
+<!-- Contact Form Section -->
+<div class="px-4">
+<h2 class="text-black dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-0 pb-3 pt-5">Send us a message and we'll get back to you shortly.</h2>
+<form class="flex flex-col gap-6 py-3">
+<div class="flex flex-col md:flex-row gap-6">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-black dark:text-white text-base font-medium leading-normal pb-2">Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-black dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-white/20 dark:border-[#4f513d] bg-white/[.05] dark:bg-[#25261d] focus:border-primary h-14 placeholder:text-black/50 dark:placeholder:text-[#b4b79f] p-[15px] text-base font-normal leading-normal" placeholder="Enter your name" value=""/>
+</label>
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-black dark:text-white text-base font-medium leading-normal pb-2">Email</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-black dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-white/20 dark:border-[#4f513d] bg-white/[.05] dark:bg-[#25261d] focus:border-primary h-14 placeholder:text-black/50 dark:placeholder:text-[#b4b79f] p-[15px] text-base font-normal leading-normal" placeholder="Enter your email address" value=""/>
+</label>
+</div>
+<div class="flex flex-col md:flex-row gap-6">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-black dark:text-white text-base font-medium leading-normal pb-2">Phone <span class="text-black/50 dark:text-white/50">(Optional)</span></p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-black dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-white/20 dark:border-[#4f513d] bg-white/[.05] dark:bg-[#25261d] focus:border-primary h-14 placeholder:text-black/50 dark:placeholder:text-[#b4b79f] p-[15px] text-base font-normal leading-normal" placeholder="Enter your phone number" value=""/>
+</label>
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-black dark:text-white text-base font-medium leading-normal pb-2">Company <span class="text-black/50 dark:text-white/50">(Optional)</span></p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-black dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-white/20 dark:border-[#4f513d] bg-white/[.05] dark:bg-[#25261d] focus:border-primary h-14 placeholder:text-black/50 dark:placeholder:text-[#b4b79f] p-[15px] text-base font-normal leading-normal" placeholder="Enter your company name" value=""/>
+</label>
+</div>
+<div>
+<label class="flex flex-col w-full">
+<p class="text-black dark:text-white text-base font-medium leading-normal pb-2">Message</p>
+<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg text-black dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-white/20 dark:border-[#4f513d] bg-white/[.05] dark:bg-[#25261d] focus:border-primary min-h-32 placeholder:text-black/50 dark:placeholder:text-[#b4b79f] p-[15px] text-base font-normal leading-normal" placeholder="Tell us about your project..."></textarea>
+</label>
+</div>
+<div class="flex justify-start">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-background-dark text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Submit Message</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Map Section -->
+<div class="px-4">
+<div class="w-full h-96 rounded-lg overflow-hidden border border-white/10 dark:border-[#4f513d]">
+<img class="w-full h-full object-cover" data-alt="A dark-themed map showing a pin for Beverly Hills, California." data-location="Beverly Hills, CA 90210" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcGOy4QPidj4HKPO0jkW_7wmqJvG5dzuow7v6L0ziYCV2BpRRS8itCp9kzF8ohjwDxia68PVRRpNqJ2iGF-F_rR77jR1kiZ9PY_COX0f7G68tCY3Eg7gSxx14skjxmwR5d6nQBAY0p0saeara-lotkQrfpSUn-2W--e_uyXwVMTmQ2laiar4mJOVUeP2MvhUawrFj4Qa0M2XprAfyRMZBHoUJMHcj9lHnZs4pV8KF1bDMxd8pNJcbjarWg7lftLXkHGjEKRjuWwQ"/>
+</div>
+</div>
+<!-- CTA & Socials -->
+<div class="px-4 py-10 rounded-lg bg-white/[.05] dark:bg-[#25261d] border border-white/10 dark:border-[#4f513d]">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+<div class="flex flex-col gap-2">
+<h3 class="text-black dark:text-white text-2xl font-bold">Prefer a direct conversation?</h3>
+<p class="text-black/60 dark:text-[#b4b79f]">Book a consultation to discuss your vision with our experts.</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-background-dark text-base font-bold leading-normal tracking-[0.015em] whitespace-nowrap">
+<span class="truncate">Schedule a Call</span>
+</button>
+</div>
+</div>
+</main>
+<footer class="border-t border-solid border-white/10 dark:border-b-[#36372a] px-10 py-8 mt-10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-4 text-black dark:text-white">
+<div class="size-4">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-black dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">TOLO STUDIO</h2>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-black dark:text-white text-sm">
+<a class="font-medium" href="#">Home</a>
+<a class="font-medium" href="#">Services</a>
+<a class="font-medium" href="#">Portfolio</a>
+<a class="font-medium" href="#">Team</a>
+</div>
+<div class="flex items-center gap-4 text-black dark:text-white">
+<a aria-label="Instagram" href="#">
+<svg class="h-5 w-5 hover:stroke-primary transition-colors" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+</a>
+<a aria-label="LinkedIn" href="#">
+<svg class="h-5 w-5 hover:stroke-primary transition-colors" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" width="4" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+</a>
+<a aria-label="Pinterest" href="#">
+<svg class="h-5 w-5 hover:stroke-primary transition-colors" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 4c-5.523 0-10 4.477-10 10 0 3.96 2.306 7.37 5.59 8.92.247.045.34-.107.34-.237v-.98c0-.47-.17-.936-.48-1.29-1.353-1.55-1.08-3.92.51-5.46 1.72-1.68 4.54-1.68 6.26 0 1.59 1.54 1.86 3.91.51 5.46-.31.354-.48.82-.48 1.29v.98c0 .13.093.282.34.237 3.284-1.55 5.59-4.96 5.59-8.92C22 8.477 17.523 4 12 4z"></path><path d="M9 12a3 3 0 1 0 6 0 3 3 0 1 0-6 0"></path></svg>
+</a>
+</div>
+</div>
+<div class="text-center text-black/50 dark:text-white/40 text-sm mt-8 pt-8 border-t border-solid border-white/10 dark:border-t-[#36372a]">
+© 2024 TOLO STUDIO. All Rights Reserved.
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

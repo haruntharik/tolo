@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TOLO STUDIO - Our Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Playfair+Display:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#c7d926",
+                        "background-light": "#f8f8f6",
+                        "background-dark": "#121212",
+                        "secondary-accent": "#A48D6C",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-dark font-display text-[#CCCCCC]">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-10 py-4 bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center gap-4 text-white">
+<div class="size-5">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold tracking-tight">TOLO STUDIO</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Services</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="portfolio.html">Portfolio</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="team.html">Team</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="testimonial.html">Testimonials</a>
+</nav>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary text-background-dark text-sm font-bold leading-normal tracking-wide hover:opacity-90 transition-opacity">
+<span class="truncate">Contact Us</span>
+</button>
+</header>
+<main class="flex-1">
+<!-- HeroSection -->
+<section class="relative">
+<div class="flex min-h-[60vh] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-8 text-center" data-alt="Abstract image of dramatic, cinematic stage lighting with atmospheric smoke." style='background-image: linear-gradient(rgba(18, 18, 18, 0.9) 0%, rgba(18, 18, 18, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCsFB5dQD4G1jqxEfC-BOrMFE7XyAds8zumWDLvXe7GqvOTx6Zp8IR0C4DEhBMEQs1s4P68wd2uulWvYOfIB97tmDBLY4akdvWDtA8LbMozQMH4IqVt9rTjN0lKpJtrUsWxkm5pVYO41XP98w6543EZdE7yCMEMwKbR3gmpomNWBxPlgq4YKNGeZ5Kub_7gTeW8WdExPbZrKcrqeekN7piMGBTpxQc-khG8_3mhb0xBEdShMOZw0NK8EG6l4riIJ4C1PV-mhK_t-Q");'>
+<div class="flex flex-col gap-4 max-w-3xl">
+<h1 class="text-[#F5F5F5] font-serif text-5xl font-bold leading-tight tracking-tight md:text-7xl">Our Services</h1>
+<div class="w-24 h-1 bg-primary mx-auto"></div>
+<h2 class="text-[#CCCCCC] text-lg font-normal leading-normal md:text-xl">We shape visions into unforgettable experiences.</h2>
+</div>
+</div>
+</section>
+<!-- Services Overview Section -->
+<section class="py-20 px-10 lg:px-20 bg-[#171717]">
+<div class="max-w-6xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service Card Item -->
+<div class="flex flex-col gap-4 rounded-lg border border-white/10 bg-background-dark p-6 hover:border-primary transition-all duration-300 group">
+<span class="material-symbols-outlined text-primary text-3xl">event_seat</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#F5F5F5] font-serif text-xl font-bold leading-tight">Event Management</h3>
+<p class="text-[#CCCCCC] text-sm font-normal leading-normal">Seamless execution from concept to completion.</p>
+</div>
+</div>
+<!-- Service Card Item -->
+<div class="flex flex-col gap-4 rounded-lg border border-white/10 bg-background-dark p-6 hover:border-primary transition-all duration-300 group">
+<span class="material-symbols-outlined text-primary text-3xl">lightbulb</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#F5F5F5] font-serif text-xl font-bold leading-tight">Creative Direction</h3>
+<p class="text-[#CCCCCC] text-sm font-normal leading-normal">Crafting compelling narratives and visual experiences.</p>
+</div>
+</div>
+<!-- Service Card Item -->
+<div class="flex flex-col gap-4 rounded-lg border border-white/10 bg-background-dark p-6 hover:border-primary transition-all duration-300 group">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#F5F5F5] font-serif text-xl font-bold leading-tight">Branding &amp; Identity</h3>
+<p class="text-[#CCCCCC] text-sm font-normal leading-normal">Building memorable brand stories that resonate.</p>
+</div>
+</div>
+<!-- Service Card Item -->
+<div class="flex flex-col gap-4 rounded-lg border border-white/10 bg-background-dark p-6 hover:border-primary transition-all duration-300 group">
+<span class="material-symbols-outlined text-primary text-3xl">theater_comedy</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#F5F5F5] font-serif text-xl font-bold leading-tight">Stage / Production Design</h3>
+<p class="text-[#CCCCCC] text-sm font-normal leading-normal">Designing immersive environments that captivate.</p>
+</div>
+</div>
+<!-- Service Card Item -->
+<div class="flex flex-col gap-4 rounded-lg border border-white/10 bg-background-dark p-6 hover:border-primary transition-all duration-300 group">
+<span class="material-symbols-outlined text-primary text-3xl">settings_input_hdmi</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#F5F5F5] font-serif text-xl font-bold leading-tight">AV &amp; Technical Production</h3>
+<p class="text-[#CCCCCC] text-sm font-normal leading-normal">State-of-the-art solutions for flawless production.</p>
+</div>
+</div>
+<!-- Service Card Item -->
+<div class="flex flex-col gap-4 rounded-lg border border-white/10 bg-background-dark p-6 hover:border-primary transition-all duration-300 group">
+<span class="material-symbols-outlined text-primary text-3xl">theaters</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#F5F5F5] font-serif text-xl font-bold leading-tight">Content Creation</h3>
+<p class="text-[#CCCCCC] text-sm font-normal leading-normal">Engaging multimedia content that tells your story.</p>
+</div>
+</div>
+<!-- Service Card Item -->
+<div class="flex flex-col gap-4 rounded-lg border border-white/10 bg-background-dark p-6 hover:border-primary transition-all duration-300 group">
+<span class="material-symbols-outlined text-primary text-3xl">calendar_month</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#F5F5F5] font-serif text-xl font-bold leading-tight">Event Strategy &amp; Planning</h3>
+<p class="text-[#CCCCCC] text-sm font-normal leading-normal">Meticulous planning for impactful, goal-oriented events.</p>
+</div>
+</div>
+<!-- Service Card Item -->
+<div class="flex flex-col gap-4 rounded-lg border border-white/10 bg-background-dark p-6 hover:border-primary transition-all duration-300 group">
+<span class="material-symbols-outlined text-primary text-3xl">cast_connected</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#F5F5F5] font-serif text-xl font-bold leading-tight">Hybrid / Virtual Events</h3>
+<p class="text-[#CCCCCC] text-sm font-normal leading-normal">Connecting global audiences with innovative technology.</p>
+</div>
+</div>
+<!-- Service Card Item -->
+<div class="flex flex-col gap-4 rounded-lg border border-white/10 bg-background-dark p-6 hover:border-primary transition-all duration-300 group">
+<span class="material-symbols-outlined text-primary text-3xl">celebration</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#F5F5F5] font-serif text-xl font-bold leading-tight">Gala Dinners &amp; Corporate Events</h3>
+<p class="text-[#CCCCCC] text-sm font-normal leading-normal">Elegant and sophisticated events for premier occasions.</p>
+</div>
+</div>
+<!-- Service Card Item -->
+<div class="flex flex-col gap-4 rounded-lg border border-white/10 bg-background-dark p-6 hover:border-primary transition-all duration-300 group">
+<span class="material-symbols-outlined text-primary text-3xl">space_dashboard</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#F5F5F5] font-serif text-xl font-bold leading-tight">Exhibition / Booth Design</h3>
+<p class="text-[#CCCCCC] text-sm font-normal leading-normal">Creating unique and engaging brand showcases.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Service Highlights -->
+<section class="py-24 px-10 lg:px-20 space-y-16">
+<div class="max-w-6xl mx-auto flex flex-col gap-20">
+<!-- Featured Service 1 -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16">
+<div class="flex-1 w-full bg-center bg-no-repeat aspect-square md:aspect-auto md:h-96 bg-cover rounded-xl" data-alt="An elegant, dimly lit room with carefully arranged tables for a gala dinner, showcasing intricate floral centerpieces." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAlOzvefbwWsIcPaVvuqa2sjuYgaInSTZIDZe7nqcJvC7igOfwwv1Enp1vwU5Zxn0u0lp8rTTM8kV3ZEBp3aCFDzrw9sqi7dn-2kLt1gewptIyHqrL0hfI23NK5d98g_EyQA1DYdIYPm4u6ihVEimTf74p8Gl0zGQRz7ZLW2rhECZjOE9hK-Eci3CaH_XG1o9vzWu9DWZopbSSl9QUY52vAePJhw3CnjXGBOhgPA4CA6w3wyRvZOdqyuChyI0LzxkaI2bPqHG83ow");'></div>
+<div class="flex flex-1 flex-col gap-4 items-start">
+<h3 class="text-[#F5F5F5] font-serif text-3xl font-bold leading-tight">Gala Dinners &amp; Corporate Events</h3>
+<p class="text-[#CCCCCC] text-base font-normal leading-relaxed">
+                                    We specialize in producing elegant and sophisticated events for premier occasions. Every detail is meticulously curated to reflect luxury, exclusivity, and brand prestige, ensuring an unforgettable experience for your most esteemed guests.
+                                </p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-white/5 text-white text-sm font-medium leading-normal hover:bg-white/10 transition-colors">
+<span class="truncate">Learn More</span>
+</button>
+</div>
+</div>
+<!-- Featured Service 2 -->
+<div class="flex flex-col md:flex-row-reverse items-center justify-between gap-12 md:gap-16">
+<div class="flex-1 w-full bg-center bg-no-repeat aspect-square md:aspect-auto md:h-96 bg-cover rounded-xl" data-alt="A captivating stage design with dynamic, colorful lighting and large LED screens for a corporate conference." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA4pmieYQaJBV0tYyHebNoswjPbHY7bsDnTu7HTWD_B-YIViLcv2TsPBXQ7ndBfNPV4OYbKVee0JmPV_6a_amEOL45SGMEkFOZCK8MvDTcZo767FVpED8XG0ZAtS2T0u5DqEAgZ5uG4x3VGxjzk4yZOr3Pr8UHE8sfgqz_CEjOiz3kYARcaj6o6OZ10pBpE_y51L3dS1B85vYMCPtPSXqzKBvmDNnF0gKA1shnR5dn3E1JhRiWeQaXfUt8F0jCJyOELQDrxvothjw");'></div>
+<div class="flex flex-1 flex-col gap-4 items-start">
+<h3 class="text-[#F5F5F5] font-serif text-3xl font-bold leading-tight">Creative Direction &amp; Production</h3>
+<p class="text-[#CCCCCC] text-base font-normal leading-relaxed">
+                                    Our team excels in crafting compelling narratives and visual experiences that captivate audiences. We transform your core message into a powerful, multi-sensory journey, from initial concept to flawless technical execution.
+                                </p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-white/5 text-white text-sm font-medium leading-normal hover:bg-white/10 transition-colors">
+<span class="truncate">Learn More</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us Section -->
+<section class="py-20 px-10 lg:px-20 bg-[#171717]">
+<div class="max-w-6xl mx-auto text-center flex flex-col items-center gap-12">
+<div class="flex flex-col gap-4">
+<h2 class="text-[#F5F5F5] font-serif text-4xl font-bold leading-tight md:text-5xl">Why TOLO STUDIO?</h2>
+<p class="text-[#CCCCCC] text-lg max-w-2xl">We are more than event planners; we are experience architects dedicated to precision, creativity, and unparalleled quality.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
+<div class="flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-secondary-accent text-4xl">edit_note</span>
+<h4 class="text-white font-bold text-lg">Bespoke Design</h4>
+<p class="text-sm text-[#CCCCCC]">Tailored concepts that reflect your unique brand identity.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-secondary-accent text-4xl">public</span>
+<h4 class="text-white font-bold text-lg">Global Reach</h4>
+<p class="text-sm text-[#CCCCCC]">Executing flawless events anywhere in the world.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-secondary-accent text-4xl">precision_manufacturing</span>
+<h4 class="text-white font-bold text-lg">Technical Expertise</h4>
+<p class="text-sm text-[#CCCCCC]">Mastery of the latest in AV and production technology.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-secondary-accent text-4xl">auto_awesome</span>
+<h4 class="text-white font-bold text-lg">Creative Innovation</h4>
+<p class="text-sm text-[#CCCCCC]">Pushing boundaries to create truly memorable moments.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-24 px-10 lg:px-20">
+<div class="max-w-6xl mx-auto text-center flex flex-col items-center gap-16">
+<div class="flex flex-col gap-4">
+<h2 class="text-[#F5F5F5] font-serif text-4xl font-bold leading-tight md:text-5xl">Our Process</h2>
+<p class="text-[#CCCCCC] text-lg max-w-2xl">A streamlined journey from vision to reality, ensuring clarity and excellence at every stage.</p>
+</div>
+<div class="w-full grid grid-cols-1 md:grid-cols-5 gap-8 items-start relative">
+<!-- Dashed line for desktop -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-px -translate-y-24">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 1">
+<line stroke="#444" stroke-dasharray="4 4" stroke-width="1" vector-effect="non-scaling-stroke" x1="0" x2="100" y1="0" y2="0"></line>
+</svg>
+</div>
+<!-- Process Step -->
+<div class="flex flex-col items-center gap-4 relative">
+<div class="w-16 h-16 rounded-full bg-background-dark border-2 border-primary flex items-center justify-center text-primary font-bold text-xl z-10">01</div>
+<h4 class="text-white font-bold text-lg mt-2">Discovery</h4>
+<p class="text-sm text-[#CCCCCC]">Understanding your goals, audience, and vision.</p>
+</div>
+<!-- Process Step -->
+<div class="flex flex-col items-center gap-4 relative">
+<div class="w-16 h-16 rounded-full bg-background-dark border-2 border-primary/50 flex items-center justify-center text-primary/80 font-bold text-xl z-10">02</div>
+<h4 class="text-white font-bold text-lg mt-2">Planning</h4>
+<p class="text-sm text-[#CCCCCC]">Strategic design, logistics, and vendor coordination.</p>
+</div>
+<!-- Process Step -->
+<div class="flex flex-col items-center gap-4 relative">
+<div class="w-16 h-16 rounded-full bg-background-dark border-2 border-primary/50 flex items-center justify-center text-primary/80 font-bold text-xl z-10">03</div>
+<h4 class="text-white font-bold text-lg mt-2">Production</h4>
+<p class="text-sm text-[#CCCCCC]">Bringing creative and technical elements to life.</p>
+</div>
+<!-- Process Step -->
+<div class="flex flex-col items-center gap-4 relative">
+<div class="w-16 h-16 rounded-full bg-background-dark border-2 border-primary/50 flex items-center justify-center text-primary/80 font-bold text-xl z-10">04</div>
+<h4 class="text-white font-bold text-lg mt-2">Execution</h4>
+<p class="text-sm text-[#CCCCCC]">On-site management for a seamless event flow.</p>
+</div>
+<!-- Process Step -->
+<div class="flex flex-col items-center gap-4 relative">
+<div class="w-16 h-16 rounded-full bg-background-dark border-2 border-primary/50 flex items-center justify-center text-primary/80 font-bold text-xl z-10">05</div>
+<h4 class="text-white font-bold text-lg mt-2">Post-Event</h4>
+<p class="text-sm text-[#CCCCCC]">Analysis, reporting, and future planning.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action Section -->
+<section class="py-20 px-10 bg-cover bg-center" data-alt="Dark, atmospheric background with bokeh lights, creating a sense of luxury and celebration." style='background-image: linear-gradient(rgba(18, 18, 18, 0.95) 0%, rgba(18, 18, 18, 0.95) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDdvH_adjFuLNjOv-gGrpscFdLyig53lXRiuhFRgjdaQvb3CcNOv9yflGEzL2-FxzW9s0X_9-OzTk2_rO5qgamXGSsJBpfc4JI3cICDhVWjUrf5xckD_gN-9w817OJnSM5MnYXdAmtfp-D806HzZoSsjbn-gt-4deOxZz5KbhZcVjHiICaZPYynKup1fOMxLuJMSC-dojU8EFwwuDWN2M1Ez2ZMEdMT8bjRoMrxiNwCMFTMwFV5IQV1Clu5KlPYXevtFHyyCPwxsg")'>
+<div class="max-w-4xl mx-auto text-center flex flex-col items-center gap-6">
+<h2 class="text-[#F5F5F5] font-serif text-4xl font-bold leading-tight md:text-5xl">Ready to Elevate Your Next Event?</h2>
+<p class="text-[#CCCCCC] text-lg max-w-2xl">Let us design an experience that leaves a lasting impression. Contact us to begin the conversation.</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 mt-4 bg-primary text-background-dark text-base font-bold leading-normal tracking-wide hover:opacity-90 transition-opacity">
+<span class="truncate">Schedule a Consultation</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark border-t border-white/10">
+<div class="max-w-6xl mx-auto py-12 px-10 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-4 text-white">
+<div class="size-4">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path></svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight">TOLO STUDIO</h2>
+</div>
+<nav class="flex items-center gap-6">
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Team</a>
+</nav>
+<p class="text-sm text-[#CCCCCC]">© 2024 TOLO STUDIO. All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

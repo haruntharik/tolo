@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TOLO STUDIO - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&amp;family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#cde01f",
+              "background-light": "#f8f8f6",
+              "background-dark": "#121212",
+              "gold": "#D4AF37"
+            },
+            fontFamily: {
+              "display": ["Montserrat", "sans-serif"],
+              "serif": ["Playfair Display", "serif"],
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#EAEAEA]">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-6 sm:px-10 lg:px-20 py-4 bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center gap-4">
+<div class="size-5 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold font-serif tracking-wider">TOLO STUDIO</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-center items-center gap-9">
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Portfolio</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="team.html">Team</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="testimonial.html">Testimonials</a>
+</nav>
+<div class="flex items-center gap-4">
+<button onclick="location.href='contact.html'" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary text-background-dark text-sm font-bold leading-normal tracking-wide hover:opacity-90 transition-opacity">
+<span class="truncate">Contact Us</span>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative flex min-h-[60vh] flex-col items-center justify-center p-4 text-center" data-alt="Dimly lit, elegant event space with blurred lights in the background.">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: linear-gradient(rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0.95) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqJplVT73vt3B928MFN2KC27CwQ9uuB7rn6u2f5a-gvzsQTVE5acMK3mxaPNbwqn1-B2R33abPiDHYbvD4AR4hU4uvF__ml3RqsaHcQHrgPmJVoAV_JVSAAz0NeHrhCheZ4DWfkobFrcMQpN20GXZTkVG_3lxYzTCxtZiEn7ABzBhsYqYSgKEpL-Jj4cBKharzrHFQKXAy5IDxo7Ew79kpFgY-kFUBAUSpBbh414hbltVnqkY9ABDvbn9wvqfXOvpTJ_649MZALg");'></div>
+<div class="relative z-10 flex flex-col items-center gap-4 max-w-4xl mx-auto">
+<div class="w-20 h-0.5 bg-primary"></div>
+<h1 class="text-white text-5xl md:text-7xl font-black font-serif leading-tight">Our Portfolio</h1>
+<h2 class="text-lg md:text-xl font-normal leading-normal text-white/80">Experiences turned into masterpieces.</h2>
+</div>
+</section>
+<div class="px-6 sm:px-10 lg:px-20 py-16 lg:py-24 space-y-16 lg:space-y-24">
+<!-- Chips / Filters -->
+<section class="flex flex-wrap items-center justify-center gap-3">
+<div class="flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary px-5">
+<p class="text-background-dark text-sm font-bold leading-normal">All Projects</p>
+</div>
+<div class="flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white/5 px-5 hover:bg-white/10 transition-colors">
+<p class="text-white text-sm font-medium leading-normal">Corporate Events</p>
+</div>
+<div class="flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white/5 px-5 hover:bg-white/10 transition-colors">
+<p class="text-white text-sm font-medium leading-normal">Gala Dinners</p>
+</div>
+<div class="flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white/5 px-5 hover:bg-white/10 transition-colors">
+<p class="text-white text-sm font-medium leading-normal">Hybrid / Virtual Events</p>
+</div>
+<div class="flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white/5 px-5 hover:bg-white/10 transition-colors">
+<p class="text-white text-sm font-medium leading-normal">Exhibitions &amp; Booths</p>
+</div>
+<div class="flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white/5 px-5 hover:bg-white/10 transition-colors">
+<p class="text-white text-sm font-medium leading-normal">Content Creation</p>
+</div>
+</section>
+<!-- Image Grid -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A grand gala dinner setup with elegantly decorated tables." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCOsaTAQdf-N1rqBW4dz5OZc8Fm3WvYG1e5xWVsr-4EWquei-q1IsBpAOMJOciiPZ2Kff_Yv_qtB6TzNd6HPDYsFyJ-agZVDBGmutHJgCCCgjbrcMsHLhIXP7LqDWaobS_M4X395fahZPJMwbekqFHUel6bIDzuAHsl3qaSp5_T1wwSWwiu9F98DEFx_VG2oHr6wh3-Tkju_VpXYiaj-uvofWhlaSg0dGZEfhWoZ-wOccMUCtcpEm8fh1tko8BpVl0v9ivxuDLLbw");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-6">
+<div class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<p class="text-white text-2xl font-bold font-serif leading-tight">Starlight Gala Dinner</p>
+<p class="text-white/80 text-sm mt-1">An unforgettable evening under the stars for a luxury brand.</p>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A futuristic and sleek exhibition booth with interactive displays." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuABOvVounMKT0oF-UMYv1hBJjUTZ5AhzCNzlY5d5pYaExnqtcl3Li1eHiWEtHAx7-0inYjZJ9e-uWTgfAB4idmH4o625yav4XZ0dDtx2ha4aww6mpNDGEONqpKnm3zaad7I7z9Q6OvpNw9BYlq0EJxzUd7XSwscALa87xKy_CEjCiD7ze1LNLgYyQp8HR9h5ZuHlbaJ_0GYAoscP_uLfyZIamykd9653hYZEbsC-ycAK1u4-wrAUcHMaprxN5H9YZ9qYapPa_NhmA");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-6">
+<div class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<p class="text-white text-2xl font-bold font-serif leading-tight">FutureTech Expo</p>
+<p class="text-white/80 text-sm mt-1">Designing the future of technology showcases.</p>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A professional virtual summit being broadcasted from a high-tech studio." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAY9zZICVn2R2h43UzEWXE6e_ullqB81vw2EfNtbWgdE55pxuwdonc-0eGu9A7OSb_oNrbJ6zIgxAGy27T5213W4UyP5YJ8XiB64mqI8TkcYr24icdOcaEXL0rUjBuZD09wsNgrJr54kDmtISYiCBG6MfVZt0f1n8NBkLN4uk9XHMg_18pzt-tj6bf5lSU1m5eZQouwBtgegjLJdyuHMh8KVhpguCdsFLTIz4VOg6esAC2d3V21H6g5y83pkbPK5Y6nBNQOssxApQ");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-6">
+<div class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<p class="text-white text-2xl font-bold font-serif leading-tight">Global Connect Summit</p>
+<p class="text-white/80 text-sm mt-1">Connecting minds across the globe, virtually.</p>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="An exclusive and stylish launch event for a new luxury product." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVaYtEX8mC2FU0IF1SLMDZ9sZ3bq5Le7JsGAiojAbCyClU2X_AAonz0ikmFnHkVcv5t120l9pxenV-6Z22ZH_bm3b-saVxQ5V7qkJxlmUBjFe1ith5I_b4aqaOakjO8xTNXsY46-s_EyBrBJ37bnT5EVbtXd7Wr2F1q-uR4ZixI8AzAbSFfqv0fHAikNjQxaMJuIf4h4XNyi0yE6ZhuQbY2JxSwfN5so_14PIq5Z554IDMTP-e7UpjC-gGsFkhhXh1NISG5lT4zg");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-6">
+<div class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<p class="text-white text-2xl font-bold font-serif leading-tight">Luxury Brand Launch</p>
+<p class="text-white/80 text-sm mt-1">Crafting an iconic debut for a premier fashion label.</p>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A serene and focused corporate retreat in a beautiful natural setting." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCS3XyvYqnXJSsLDssEgGMpzR1hGQLp3NpJ0HpKVHdQCFQa-9cDMtcJZLlcsssEVc3yVRg7W_2vkoCIXeNUmO1GIg3v4rBK_HYQXHfMQdEbGzQTxgc4NeJZwqABGheslRumbITgfPEL95UIHGY4HRtLfGg41veoTpaEGqOOPRn0P7wthESGj4L6j5pwc_LsJn3XFovB5MfWOtkcb1Xt7JYESo3lYnPbyjKpGYiLYbOHnTsR2LSfqGK1NSt5i_D5l2shrjIeNUShdQ");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-6">
+<div class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<p class="text-white text-2xl font-bold font-serif leading-tight">Annual Corporate Retreat</p>
+<p class="text-white/80 text-sm mt-1">Fostering teamwork and innovation in an inspiring environment.</p>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A modern art installation premiere with dramatic lighting." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCoyk24TMXV5fQS3MYwzzd2QQ1KbpLRYI-mhzQQRFvYI10DlemKJSyzDGeNxsTSzX6J2yD67zuoa_jsP5YQ9ZFgJVANR-q3YUeHJMb5FjCmeu8N_A2Dyaijf1fyQHUINVrB7zd3MUZre06f_x9uj7a6olLpj28rwosFHEVuAcGt70_xyeT548LeAS2hahL3M_HahbKxg02OfaTOw6t1wI-CldafRoOpDzkI4O21_21f7KaGCyRnfSovUsFXKZjDvbCuJglqGbYyiQ");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-6">
+<div class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<p class="text-white text-2xl font-bold font-serif leading-tight">Art Installation Premiere</p>
+<p class="text-white/80 text-sm mt-1">Merging creativity and experience for a cultural milestone.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Header -->
+<section class="text-center">
+<h2 class="text-white text-4xl md:text-5xl font-bold font-serif leading-tight">Featured Case Studies</h2>
+<p class="mt-4 max-w-2xl mx-auto text-white/70">A deeper look into our most impactful and ambitious projects.</p>
+</section>
+<!-- Featured Projects -->
+<section class="space-y-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+<div class="w-full aspect-[4/3] rounded-xl overflow-hidden">
+<img alt="A large conference hall with an audience watching a speaker on stage." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJgf79MwxgLjav4ithh6qkySDolzWjvWWaBg9H9eMJVrDjmbQTYew24bMdZOZpBc9-zFFINUkWyIn6bOFOFgA25IZWtoqhPbqRJycp2UZXbfH_B5nyI5-rCCSIEVPMUgMtD6lsXegjqQ50nx_51_bxKymOvKmcvRbODhWnJQQcXJ1vFrbPtoJhqolc_34JnJk8XtNlaaSakixtrWgb6vUaOE9WKL9mt6KrEkF5s5_dGr1O0-WWbrnVxP3ABCYc83HNv_2YJaCGzw"/>
+</div>
+<div>
+<p class="text-primary font-bold text-sm">Corporate Conference</p>
+<h3 class="text-white text-3xl font-bold font-serif mt-2">The Visionaries Conference</h3>
+<p class="text-white/80 mt-4">We transformed a standard corporate conference into an immersive, thought-provoking experience, blending cutting-edge technology with inspiring content to foster genuine connection and innovation among industry leaders.</p>
+<button class="mt-6 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-background-dark text-base font-bold leading-normal tracking-wide hover:opacity-90 transition-opacity">
+<span class="truncate">View Case Study</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+<div class="w-full aspect-[4/3] rounded-xl overflow-hidden lg:order-2">
+<img alt="A live concert with a large crowd and vibrant stage lights." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnvHsEALlRMd3CcRBRWz2BwpsYYE280j6EPWXiIiiAoGRMFX2FxKW603fp3wJ_DoLmSsWqi3XChdBiPWNOOYPdhY1obKhxVDBjruhVF5PhU-bUKaHZz10oNRNxJplYv-AABMuab4qIhmA28NCdfnxtTPYZUM8UYul7KZGPbIHthBm_a6IFa71-qhubmRdm3l8Szfrczqa4lJ-JeIRK0p9tTtmGdxyjqpixpUVR04mFZAywHns8WVRNtoh9njc0dWcjOd8lg3_o4g"/>
+</div>
+<div class="lg:order-1">
+<p class="text-primary font-bold text-sm">Music &amp; Arts Festival</p>
+<h3 class="text-white text-3xl font-bold font-serif mt-2">Aura Music Festival</h3>
+<p class="text-white/80 mt-4">For the Aura Festival, our team orchestrated a multi-sensory journey, managing everything from artist logistics and stage production to interactive art installations, creating a landmark cultural event that resonated with thousands.</p>
+<button class="mt-6 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-background-dark text-base font-bold leading-normal tracking-wide hover:opacity-90 transition-opacity">
+<span class="truncate">View Case Study</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Client Logos -->
+<section>
+<h3 class="text-center text-2xl font-serif text-white/80 mb-8">Trusted by Industry Leaders</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+<div class="flex justify-center">
+<img alt="Client logo 1" class="h-8 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOPqdZy7jQpp-yF2aQaXlhAp_7Opzc0_mVyCbYBnf_N1CjO7vLuz7GRyGasN5NkNwUKFz30xoe3yxTrYM2c5fD8R4CStEKxMfp_a7XkeFO-_G8cZkz2P0wo1vxfe-NQPlN5i1HjknzqboWbsplUq_-hSTEhQaP2r6b0-tfgvJTUTGidOLygIGqe2thdgjgQl4kRphxfM56ZZU0YNwaUHuGxokgiwLqlRyqplD70fnIiY7QwXBRZDhoMLEqdM9XXcG26wE9-DIl6Q"/>
+</div>
+<div class="flex justify-center">
+<img alt="Client logo 2" class="h-8 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjIdVBz1Iqcyyrgu-eVtZPSZL1rXX5fROSJOoEe-D3Civ48p6PhsZIAL-UDLyz9NnzuUmW17u-DVft8zvTifgcfUGhYz-8mjQPB0WaORz02JWHzKKgrb7695Upsgx0UMT0qgLCrcOb_nOsLZoul4brpZtsytKTkQY7khYYsc5BK7R15sKC2KQ2rrWxelax8n3ZNhngWAMHWgmfxPOI0XIioElOmRgdFtQ4ONUT_10xJIbB2lIGrDcRJloeN1hk99_Ghw0mywot3A"/>
+</div>
+<div class="flex justify-center">
+<img alt="Client logo 3" class="h-8 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwSMSrKlRcm3X40HC943Kwk-M0fT7aJ9X1XYEj6b_VTxbmwi_xVbC8sQi-A5SO1THopQFbT9cFJj6K9Pd05aLBlg284YRSxfREFzU2FIdx5YAFXNbHqARWuEU3KOGUFhuAoAq-1V5iEj-1PUffYpbuZ950FXsBhuCljme7KViP6nw2cUkcd5pZOvb5r7-igmyVQk9ZcxT-qVU09lKwO70m6BTt6hFAoswbAN9SnW7lZch86k02Eih3S-yCV-ykleif1mClINtecg"/>
+</div>
+<div class="flex justify-center">
+<img alt="Client logo 4" class="h-8 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv5ePWxFYvwPLyU0U5rdL7ZSCnOsRRs0ionazEGErIBC4c5SUXW2xCftx-qyXGO_TiftsUeE6AwONsTGpDuiRJs7z-tySGxz8OKMY-gyIDoTnO5PvqYtAZSrOMFpQsQpFs1XkRLEXYYZZC1zh3bbJg5jtVqvHAt_aqcsjaGN1soiIp6OZO0HkZ2vJybAnPolYaQy-muD2ocZc7fnwwB4FcLuuQwSR4aDui5grSZb2rovtrS7vvCcaJPJb9sLJlPdd12Opa2twejg"/>
+</div>
+<div class="flex justify-center">
+<img alt="Client logo 5" class="h-8 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTUAxnJWHsIjkYOGTCJDw52zr-3g25AudacctFl0-a0usDI_4HxtdCV18Igqc6PTOEwVIzJqQxclArre-XjZbtA84biQAd4sKQwpXoRRpnvxRHlvQn38NDCyJYGg8DBJyTcnMeoH9_EilnmMZIQTAuUA7izAWmSzeZbWE3M5IjOZdDQBkLUUyrt_9yI6Hk5fdYTjeP4MccfagOLw1Ed5GfQ8eCTIoD15-Q_sW47_lrhig2U_EzK7K6BFr5EfFwbsW1RkXigYzQDQ"/>
+</div>
+<div class="flex justify-center">
+<img alt="Client logo 6" class="h-8 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLfLZuzObO_iAd5Mz9EQyleNIHjbKv2g9wwRsDj-2uv27qX81JkMax1iOlsJoijIigZ1TlO5Lo9x6W9NhltH_V5utEaAK1_4oMP8hAkwZzthRKNL81MsE3HchDXPdA-8hWKnM0km0OAc-kItKUSDWgpDdgacuaCEp9jsaheqsxbS9FuhPnPRvEFDkRIU5kGw8Wc3FnXoxQzTr2Plj0kjwYXxa5dysJZBh2-sPvD1enGARNMxMfi5m0TmMfTcIZm0ykG71seKerfA"/>
+</div>
+</div>
+</section>
+</div>
+<!-- CTA Section -->
+<section class="bg-white/5 py-20 px-6 sm:px-10 lg:px-20">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-white text-4xl md:text-5xl font-black font-serif leading-tight">Inspired by what you see?</h2>
+<p class="text-white/80 mt-4 text-lg">Let’s bring your vision to life with TOLO STUDIO.</p>
+<button class="mt-8 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-primary text-background-dark text-base font-bold leading-normal tracking-wide mx-auto hover:opacity-90 transition-opacity">
+<span class="truncate">Start Your Project</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark px-6 sm:px-10 lg:px-20 py-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<div class="flex items-center gap-4">
+<div class="size-5 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold font-serif tracking-wider">TOLO STUDIO</h2>
+</div>
+<p class="text-white/60 mt-4 text-sm">Experiences turned into masterpieces.</p>
+</div>
+<div>
+<h3 class="text-white font-bold tracking-wider">Quick Links</h3>
+<nav class="mt-4 flex flex-col space-y-2">
+<a class="text-white/60 text-sm hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-white/60 text-sm hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-white/60 text-sm hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-white/60 text-sm hover:text-primary transition-colors" href="#">Team</a>
+</nav>
+</div>
+<div>
+<h3 class="text-white font-bold tracking-wider">Connect</h3>
+<div class="mt-4 space-y-2 text-sm text-white/60">
+<p>hello@tolostudio.com</p>
+<p>+1 (234) 567-890</p>
+</div>
+<div class="flex items-center gap-4 mt-4">
+<a class="text-white/60 hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-white/60 hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.485 2.525c.636-.247 1.363-.416 2.427-.465C9.93 2.013 10.284 2 12.315 2zm-1.003 1.482h-.001c-1.063 0-1.76.22-2.228.42a3.396 3.396 0 00-1.2.825 3.396 3.396 0 00-.825 1.2c-.2.468-.42 1.165-.42 2.228s.22 1.76.42 2.228a3.396 3.396 0 00.825 1.2 3.396 3.396 0 001.2.825c.468.2 1.165.42 2.228.42h.001s1.063 0 2.228-.42a3.396 3.396 0 001.2-.825 3.396 3.396 0 00.825-1.2c.2-.468.42-1.165.42-2.228s-.22-1.76-.42-2.228a3.396 3.396 0 00-.825-1.2 3.396 3.396 0 00-1.2-.825c-.468-.2-1.165-.42-2.228-.42zM12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zm0 1.5a2.25 2.25 0 110 4.5 2.25 2.25 0 010-4.5z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-white/60 hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-white/10 text-center text-sm text-white/40">
+<p>© 2024 TOLO STUDIO. All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+</body></html>
